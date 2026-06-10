@@ -185,8 +185,60 @@ box-shadow:0 0 20px rgba(124,58,237,.5);
 .hero h1{
 text-shadow:0 0 25px rgba(139,92,246,.6);
 }
+
+body::before{
+content:"";
+position:fixed;
+top:-150px;
+right:-150px;
+width:400px;
+height:400px;
+background:#7c3aed;
+filter:blur(180px);
+opacity:.25;
+z-index:-1;
+}
+
+body::after{
+content:"";
+position:fixed;
+bottom:-150px;
+left:-150px;
+width:400px;
+height:400px;
+background:#06b6d4;
+filter:blur(180px);
+opacity:.20;
+z-index:-1;
+}
+
+.topbar{
+backdrop-filter:blur(20px);
+box-shadow:0 0 20px rgba(255,255,255,.05);
+}
+
+.card{
+transition:.3s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-10px);
+box-shadow:0 0 25px rgba(124,58,237,.5);
+}
+
+.chat-container{
+border:1px solid rgba(255,255,255,.08);
+}
+
+.chat-input input:focus{
+outline:none;
+box-shadow:0 0 15px rgba(124,58,237,.4);
+}    
     
-</style></head><body><div class="sidebar"><h2>🤖 GramoCart AI</h2><a href="#dashboard">🏠 Dashboard</a>
+</style>
+
+</head><body><div class="sidebar"><h2>🤖 GramoCart AI</h2><a href="#dashboard">🏠 Dashboard</a>
 <a href="#tools">🎨 AI Tools</a>
 <a href="#chat">💬 AI Chat</a>
 <a href="#marketplace">🛒 Marketplace</a>
@@ -274,6 +326,16 @@ new Date().toLocaleTimeString();
 
 setInterval(updateClock,1000);
 updateClock();
+
+document.addEventListener("keydown",(e)=>{
+
+if(e.key==="Enter"){
+
+sendMessage();
+
+}
+
+});  
 
 </script></body>
 </html>
