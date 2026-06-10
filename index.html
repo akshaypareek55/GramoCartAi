@@ -159,16 +159,18 @@ font-size:40px;
 
 }
 
-</style></head><body><div class="sidebar"><h2>🤖 GramoCart AI</h2><a href="#">🏠 Dashboard</a>
-<a href="#">💬 AI Chat</a>
-<a href="#">🎨 Image Generator</a>
-<a href="#">🌐 Website Builder</a>
-<a href="#">📄 Resume Analyzer</a>
-<a href="#">🛒 Marketplace</a>
+</style></head><body><div class="sidebar"><h2>🤖 GramoCart AI</h2>
+<a href="#dashboard">🏠 Dashboard</a>
+<a href="#chat">💬 AI Chat</a>
+<a href="#tools">🎨 AI Tools</a>
+<a href="#marketplace">🛒 Marketplace</a>
 
-</div><div class="main"><div class="hero"><h1>Future AI SuperHub</h1><p>
+</div><div class="main">
+  <div class="hero" id="dashboard">
+  <h1>Future AI SuperHub</h1><p>
 Create Content • Generate Images • Build Websites • Grow Business
-</p></div><div class="cards"><div class="card">
+</p></div><div class="cards">
+  <div class="cards" id="tools">
 <h3>🤖 AI Chat</h3>
 <p>ChatGPT Style Assistant</p>
 </div><div class="card">
@@ -180,7 +182,12 @@ Create Content • Generate Images • Build Websites • Grow Business
 </div><div class="card">
 <h3>📄 Resume Analyzer</h3>
 <p>Improve Resume Score</p>
-</div></div><h2 class="section-title">🤖 AI Assistant</h2><div class="chat-container"><div class="chat-box" id="chatBox"><div class="bot">
+</div></div><h2 class="section-title" id="chat">
+🤖 AI Assistant
+</h2>
+  <div class="chat-container">
+    <div class="chat-box" id="chatBox">
+      <div class="bot">
 👋 Hello! Welcome to GramoCart AI
 </div></div><div class="chat-input"><input
 id="msg"
