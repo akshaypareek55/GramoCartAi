@@ -1,213 +1,227 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GramoCart AI</title>
+<title>GramoCart AI</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><style>
 
-<link rel="stylesheet" href="style.css">
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Inter',sans-serif;
+}
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-</head>
+body{
+background:#050816;
+color:white;
+display:flex;
+min-height:100vh;
+overflow-x:hidden;
+}
 
-<body>
+.sidebar{
+width:260px;
+padding:30px;
+background:rgba(255,255,255,.04);
+backdrop-filter:blur(20px);
+border-right:1px solid rgba(255,255,255,.08);
+}
 
-<div class="sidebar">
+.sidebar h2{
+margin-bottom:30px;
+background:linear-gradient(90deg,#8b5cf6,#06b6d4);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
 
-<h2>🤖 GramoCart AI</h2>
+.sidebar a{
+display:block;
+padding:12px;
+margin-bottom:10px;
+color:white;
+text-decoration:none;
+border-radius:12px;
+}
 
-<a href="#">🏠 Dashboard</a>
+.sidebar a:hover{
+background:#7c3aed;
+}
+
+.main{
+flex:1;
+padding:30px;
+}
+
+.hero h1{
+font-size:60px;
+background:linear-gradient(90deg,#fff,#8b5cf6,#06b6d4);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.hero p{
+margin-top:10px;
+opacity:.8;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.card{
+padding:25px;
+background:rgba(255,255,255,.05);
+border-radius:20px;
+border:1px solid rgba(255,255,255,.08);
+}
+
+.card:hover{
+transform:translateY(-5px);
+transition:.3s;
+}
+
+.section-title{
+margin-top:50px;
+margin-bottom:20px;
+font-size:28px;
+}
+
+.chat-container{
+margin-top:30px;
+padding:20px;
+background:rgba(255,255,255,.05);
+border-radius:20px;
+}
+
+.chat-box{
+height:300px;
+overflow-y:auto;
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.bot{
+background:#7c3aed;
+padding:12px;
+border-radius:12px;
+max-width:70%;
+}
+
+.user{
+background:#06b6d4;
+padding:12px;
+border-radius:12px;
+max-width:70%;
+align-self:flex-end;
+}
+
+.chat-input{
+display:flex;
+gap:10px;
+margin-top:15px;
+}
+
+.chat-input input{
+flex:1;
+padding:12px;
+border:none;
+border-radius:12px;
+background:#111827;
+color:white;
+}
+
+.chat-input button{
+padding:12px 20px;
+border:none;
+border-radius:12px;
+background:linear-gradient(90deg,#7c3aed,#06b6d4);
+color:white;
+cursor:pointer;
+}
+
+@media(max-width:900px){
+
+body{
+flex-direction:column;
+}
+
+.sidebar{
+width:100%;
+}
+
+.hero h1{
+font-size:40px;
+}
+
+}
+
+</style></head><body><div class="sidebar"><h2>🤖 GramoCart AI</h2><a href="#">🏠 Dashboard</a>
 <a href="#">💬 AI Chat</a>
 <a href="#">🎨 Image Generator</a>
 <a href="#">🌐 Website Builder</a>
 <a href="#">📄 Resume Analyzer</a>
-<a href="#">🧾 Invoice Generator</a>
 <a href="#">🛒 Marketplace</a>
-<a href="#">⚙ Settings</a>
 
-</div>
-
-<div class="main">
-
-<div class="topbar">
-
-<input type="text" placeholder="Search AI Tools...">
-
-<button>🚀 Upgrade Pro</button>
-
-</div>
-
-<div class="hero">
-
-<h1>Future AI SuperHub</h1>
-
-<p>
-Create Content • Generate Images • Build Websites • Find Jobs • Grow Business
-</p>
-
-</div>
-
-<h2 class="section-title">⚡ Quick Actions</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>💬 Start AI Chat</h3>
-<p>Ask anything instantly</p>
-<button class="action-btn">Open</button>
-</div>
-
-<div class="card">
-<h3>🎨 Generate Image</h3>
-<p>Create AI art & logos</p>
-<button class="action-btn">Create</button>
-</div>
-
-<div class="card">
-<h3>🌐 Build Website</h3>
-<p>Generate website ideas</p>
-<button class="action-btn">Build</button>
-</div>
-
-<div class="card">
-<h3>📄 Analyze Resume</h3>
-<p>Improve job chances</p>
-<button class="action-btn">Analyze</button>
-</div>
-
-</div>  
-
-<div class="cards">
-
-<div class="card">
+</div><div class="main"><div class="hero"><h1>Future AI SuperHub</h1><p>
+Create Content • Generate Images • Build Websites • Grow Business
+</p></div><div class="cards"><div class="card">
 <h3>🤖 AI Chat</h3>
 <p>ChatGPT Style Assistant</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <h3>🎨 Image Generator</h3>
 <p>Create AI Images</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <h3>🌐 Website Builder</h3>
 <p>Build Websites Instantly</p>
-</div>
-
-<div class="card">
+</div><div class="card">
 <h3>📄 Resume Analyzer</h3>
 <p>Improve Resume Score</p>
-</div>
+</div></div><h2 class="section-title">🤖 AI Assistant</h2><div class="chat-container"><div class="chat-box" id="chatBox"><div class="bot">
+👋 Hello! Welcome to GramoCart AI
+</div></div><div class="chat-input"><input
+id="msg"
+type="text"
+placeholder="Ask anything..."
 
-<div class="card">
-<h3>📹 Content Creator</h3>
-<p>YouTube & SEO Tools</p>
-</div>
+«»
 
-<div class="card">
-<h3>💼 Business Tools</h3>
-<p>Invoices & Proposals</p>
-</div>
+<button onclick="sendMessage()">
+Send
+</button></div></div></div><script>
 
-</div>
+function sendMessage(){
 
-<h2 class="section-title">🔥 Trending AI Tools</h2>
+let input=
+document.getElementById("msg");
 
-<div class="trending-grid">
+let text=
+input.value.trim();
 
-<div class="trend-card">
-<h3>AI Agent Builder</h3>
-<p>Create Smart AI Agents</p>
-</div>
+if(text==="") return;
 
-<div class="trend-card">
-<h3>AI Image Studio</h3>
-<p>Generate Viral Images</p>
-</div>
+let chat=
+document.getElementById("chatBox");
 
-<div class="trend-card">
-<h3>SEO Generator</h3>
-<p>Google Ranking Tools</p>
-</div>
+chat.innerHTML +=
+'<div class="user">'+text+'</div>';
 
-<div class="trend-card">
-<h3>Job Finder AI</h3>
-<p>Find Remote Jobs</p>
-</div>
+input.value="";
 
-</div>
+setTimeout(()=>{
 
-<h2 class="section-title">📊 Platform Stats</h2>
+chat.innerHTML +=
+'<div class="bot">🚀 AI API will be connected next.</div>';
 
-<div class="stats">
+chat.scrollTop=
+chat.scrollHeight;
 
-<div class="stat-box">
-<h3>1.2M+</h3>
-<p>AI Requests</p>
-</div>
+},700);
 
-<div class="stat-box">
-<h3>25K+</h3>
-<p>Users</p>
-</div>
+}
 
-<div class="stat-box">
-<h3>500+</h3>
-<p>Templates</p>
-</div>
-
-<div class="stat-box">
-<h3>99%</h3>
-<p>Success Rate</p>
-</div>
-
-</div>
-
-<h2 class="section-title">📰 AI News Feed</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>OpenAI Updates</h3>
-<p>Latest AI model releases and features.</p>
-</div>
-
-<div class="card">
-<h3>Google Gemini</h3>
-<p>New AI innovations from Google.</p>
-</div>
-
-<div class="card">
-<h3>AI Business</h3>
-<p>How companies use AI to scale.</p>
-</div>
-
-</div>
-
-<h2 class="section-title">🛒 Marketplace</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>AI Prompts Pack</h3>
-<p>1000+ Premium Prompts</p>
-</div>
-
-<div class="card">
-<h3>Website Templates</h3>
-<p>Modern SaaS Templates</p>
-</div>
-
-<div class="card">
-<h3>Business Templates</h3>
-<p>Invoices & Proposal Kits</p>
-</div>
-
-</div>
-
-</div>
-
-<script src="script.js"></script>
-
-</body>
+</script></body>
 </html>
