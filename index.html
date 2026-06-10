@@ -2,7 +2,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GramoCart AI</title><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"><style>
+<title>GramoCart AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <style>
 *{
 margin:0;
 padding:0;
@@ -168,6 +171,21 @@ width:100%;
 font-size:40px;
 }
 }
+
+.card{
+transition:0.3s;
+cursor:pointer;
+}
+
+.card:hover{
+transform:translateY(-8px);
+box-shadow:0 0 20px rgba(124,58,237,.5);
+}
+
+.hero h1{
+text-shadow:0 0 25px rgba(139,92,246,.6);
+}
+    
 </style></head><body><div class="sidebar"><h2>🤖 GramoCart AI</h2><a href="#dashboard">🏠 Dashboard</a>
 <a href="#tools">🎨 AI Tools</a>
 <a href="#chat">💬 AI Chat</a>
@@ -198,16 +216,12 @@ id="msg"
 type="text"
 placeholder="Ask anything..."
 
-«»
-
 <button onclick="sendMessage()">
 Send
 </button></div></div><h2 class="section-title" id="marketplace">
 🛒 Marketplace
 </h2><div class="cards"><div class="card">
 <h3>🔥 AI Prompt Pack</h3>
-
-akshay pareek hanumangarh Rajasthan, [6/10/2026 7:11 PM]
 <p>1000+ Premium AI Prompts</p>
 </div><div class="card">
 <h3>🌐 Website Templates</h3>
